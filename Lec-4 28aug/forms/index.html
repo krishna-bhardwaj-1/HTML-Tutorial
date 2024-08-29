@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nature of form is to submit. -->
+    <!-- form have two attributes: 
+     (i) Action :
+    (ii) Method : How form is to be submitted : 
+                                (i) get : fetch the data
+                                (ii) post : (bhejna) we can fetch the data by this in emergency.-->
+
+    <form action="#" method="GET">  
+        <!-- in action we give where the data is to be send . within the same page action = "#" -->
+        <!-- by using the method is GET  -->
+
+        <input type="text" name="username" id=""> <!--name attribute holds value by input user-->
+        <input type="password" name="password" id="">
+        <input type="email" name="email" id="">
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+        <button>only btn</button> <!-- by default the type of the buttom is to submit-->
+    </form>
+
+    <!-- to not send the data by using the GET method. bcz it is shown in the URL of browser -->
+
+    <form action="#" method="POST">
+        <!-- here action is not defined that's why code ft jyga. -->
+        <!-- in get method all the data given by the user is shown in the url but in post it was not shown-->
+
+        <!-- connect the content to the input entered by the user. by using the lebel attribute-->
+        <label for="naam">Username:</label>
+        <input type="text" name="username" id="naam">
+        <br>
+
+        <label for="pswrd">password:</label>
+        <input type="password" name="password" id="pswrd">
+        <br>
+ 
+        <label for="mail">Email:</label>
+        <input type="email" name="email" id="mail">
+
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+    <!-- ? is the query parameter. # is the action  -->
+    <h1>Gender</h1>
+    Male: 
+    <input type="radio" name="" id="">
+    Female:
+    <input type="radio" name="" id="">
+    others:
+    <input type="radio" name="" id="">
+    <!-- here the problem is all 3 are selected and the value id given to all three inputs. that's why we can define the name in  input attribute -->
+
+
+    <!-- name attribute is hold the value in the input attribute. -->
+    <h1>Gender</h1>
+    Male: 
+    <input type="radio" name="x" id="">
+    Female:
+    <input type="radio" name="x" id="">
+    others:
+    <input type="radio" name="x" id="">
+</body>
+</html>

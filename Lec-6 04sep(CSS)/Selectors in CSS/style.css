@@ -1,0 +1,49 @@
+/* Element selector */
+h1{
+    color: red;
+}
+
+/* id selector: id have to unique through out the program. create in body tag. */
+/* for id : '#' */
+
+#kri{
+    font-size: 50px;
+    background-color: blanchedalmond;
+}
+
+/* for class : '.'  it is used for encountering multiple tag at same time. */
+
+.sharma{
+    background-color: aqua;
+    font-size: 40px;
+}
+
+/* Universal Selector : select all the tags (h1,dev,h2.....) start with '*' */
+
+*{
+    border: 1px solid red;
+    /* border: 5px dotted greenyellow;
+    border: 2px dotted coral; */
+}
+
+/* Attribute selector :  */
+
+/* input{
+    background-color: aquamarine;
+} */
+/* for specific input */
+input[type="text"]{
+    background-color: cadetblue;
+}
+input[type="password"]{
+    background-color: greenyellow;
+}
+
+a[href="https://google.com"]{
+    background-color: fuchsia;
+    font-size: 30px;
+}
+a[href="https://flipkart.com"]{
+    background-color: mediumpurple;
+    font-size: 40px;
+}

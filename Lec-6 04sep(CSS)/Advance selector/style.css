@@ -1,0 +1,41 @@
+/* Advance:- Combinators:  */
+
+/* (i) descendent
+" " space is used to denote this. 
+Used for multiple down jump from top to bottom. 
+
+(ii) child
+">" symbol is used to d
+
+
+
+
+/* pseudo classes: 
+':' is used to hover state - which means move the cursor from state1 to state2 i.e.. from resting to  */
+
+div{
+    background-color: aqua;
+}
+div:hover{
+    background-color: crimson;
+}
+
+input{
+    background-color: indianred;
+}
+input:focus{
+    background-color: chartreuse;
+}
+
+a{
+    font-size: 50px;
+}
+a:active{
+    color: peachpuff;
+}
+
+a:visited{
+    color: rgb(207, 126, 169);
+}
+
+/* (v) nth-of-type:  */

@@ -1,0 +1,9 @@
+/* 
+Inheritence: colour and font size follows the inheritence but border does not follow.
+*/
+ul>li{
+    color: red;
+    font-size: 30px;
+    border: 5px solid blueviolet
+    ;
+}

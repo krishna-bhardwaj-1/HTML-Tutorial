@@ -1,0 +1,25 @@
+/* 
+two types of units: 1) relative     2) absolute
+*/
+section{
+    width: 800px;
+    background-color: aqua;
+}
+div{
+    width: 80%;        /* % is depend on its ancestors like in this 500px otherwise it depend on the body */
+    background-color: gold;
+    border: 1px dashed red;
+}
+/* 
+em : incearses many times as u want wrt parents
+rem : increases with respect to body which is bydefault 16px.
+*/
+ul>li{
+    /* Snow ball effect */
+    font-size: 2em;
+    font-size: 2rem;
+    /* r stands for root i.e.(html body) */
+}
+*{
+    border: 2px dotted red;
+}

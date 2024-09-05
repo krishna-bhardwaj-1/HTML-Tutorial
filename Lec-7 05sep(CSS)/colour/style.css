@@ -1,0 +1,8 @@
+h1{
+    color: rgb(64, 175, 158);
+}
+h1{
+    /* color: rgba(198, 98, 98,0.7); */
+    color: #479af4ff       /* (' R ',' G ',' B ',' A (ff to 00 in hexadecimal)') */
+    
+}

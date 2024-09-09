@@ -5,9 +5,13 @@
 Used for multiple down jump from top to bottom. 
 
 (ii) child
-">" symbol is used to d
+">" symbol is used to denote this it is used for single down jump
 
+(iii) adjacent siblings
+'+' is used to denote this used for only on right access
 
+(iv) general siblings
+'~' is used to denote this used for multi[le right access
 
 
 /* pseudo classes: 

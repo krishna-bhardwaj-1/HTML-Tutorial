@@ -1,0 +1,47 @@
+/*
+
+Box-Model : There are 5 properties : 
+(i)  padding : ( lawn in a house ) 
+(ii) Margin : distance between two elemts this is not s part of the element (ghar ki side ki road)
+(iii) Border : border like the boundary
+(iv) height : mearument where we can write(inside the home boundary inside lawn)
+(v) Width : mearument where we can write (inside the home boundary inside lawn)
+
+all the properties are applicable only on block elements like div par, not applicable on inline elements : like span,strong
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* by default is a content box */
+    box-sizing: border-box;   /* it compromising itself and decrease the height and weight of the content area.*/
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border: 5px solid black; /* it is also in 100 x 100 bcz box sizing is border box (that's why it is in in their margib)*/
+}
+span{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    padding: 10px;
+
+    /* display: block;  but it is not a feasible solution bcz it take the properties of the block */
+
+    display: inline-block;
+
+    /* display: none;    dikhenge nhi or jgha bhi nhi lenge */ 
+    /* visibility:  hidden; dikhenge nhi lekin jgha lenge or jgha inspect se pta chl jygi */
+    
+    margin: 10px;
+}

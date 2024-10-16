@@ -1,0 +1,72 @@
+/*
+position : it is a property
+
+1) static   : default   offset does not work
+2) Relative : offset milega ( Apni original position se )
+3) Absolute : 
+4) Fixed    :
+5) Sticky   : relative anf ficed ki property merge
+
+offset : left right bottom top of a element
+
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    display: inline-block; 
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#static #middle{
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+#relative #middle{
+    position: relative;
+    /* top: 50px;
+    left: 50px; */
+    /*element apni original position se 50 px niche 50 px right ki trf*/
+}
+/*recent parent ko position deni pdegi nhi to recent parent body hoti h */
+#absolute{
+    position: relative;
+}
+#absolute #middle{
+    position: absolute;
+    /*absolute position m sheets hoti h agr hm kisi element ko encounter kr rhe h to vo element 1 level upr chla jata h or us element ki jgha usse aage wale element lefi side m shift ho jate h . Jb hm top view se dekhte h to uska right neighbour uske niche aa jata h jisse vo nhi dikhta*/
+
+    /*offset depend on recently positioned parent 
+    offset mtlb encountered element ki position . ye position vo apni recent parent se leta h jisko position mili hui h agr uske kisi bhi ancestor ko position nhi mili to by delfaut browser se apna offset set krega. */
+
+
+    /* top: 50px;
+    left: 50px; */
+    top: 0px;
+    left: 208px;
+}
+/* 
+koi fyda nhi h fixed hmesha body k respect m position lega .
+agr koi block hme fix krna h to hum use kr skte h viewport move krne pr ye move nhi hoga.
+#fixed{
+    position: relative;
+} */
+#fixed #middle{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+#sticky{
+    border: 1px solid blue;
+    height: 500px;
+}
+#sticky #middle{
+    position: sticky;
+    top: 50px;
+    left: 50px;
+}

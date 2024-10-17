@@ -1,0 +1,51 @@
+/*
+display : flex
+flex : not a child property.
+hum ye property child k parent ko denge . child property m sbko alg alg dete h. 
+lekin flex h hum parent ko de dete h to uske bche us property ko accept kr lete h.
+
+flex box is the parent (football ground)
+flex child : flex box k bche (player)
+
+flex vs grid
+flex is one dimensional (not x axis not y axis   -- main axis )
+default flex direction : row
+                       : column   (ye dena pdta h agr main axis ko cross axis bnana ho ) 
+both row nad column are main axis . by default main axis is row and cross axis is perpendicular to the main axis.
+grid is two dimensional
+*/
+
+section{
+    height: 100vh;      /* flex direction agr column h to hme height deni pdegi nhi to justify content km nhi krega kyoki viewport ki height infinite hoti h.*/
+    border: 10px solid rebeccapurple;
+    display: flex;
+    /*flex-direction: column;*/ /* ek k niche ek cross axis is main axis */
+
+    flex-direction: row;
+    /*justify-content: center;*/  /*this work main axis as well as cross axis bt cross axis m height deni pdegi*/
+    justify-content: space-around; /* star or end m space item k beech ka hakf hoga*/
+    justify-content: space-between; /* bs item k beech m space ayga*/
+    justify-content: space-evenly;  /* sb jgha space same hoga */
+
+
+    /*item left right se bhi align ho jyga*/
+    align-items: center;
+
+    /* align-items: flex-end; */
+
+    /* jb diplay choti hogi to element shrink ho jayenge by defalut*/
+    flex-wrap: nowrap;
+    flex-wrap: wrap; 
+
+    /* wrap k bd jo element niche jyga uske beech ka distance km krne k liye align content kro*/
+    align-content: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+    /*child property*/
+    /* display: inline-block; */
+}

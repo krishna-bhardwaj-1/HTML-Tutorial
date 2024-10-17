@@ -1,0 +1,22 @@
+section{
+    height: 100vh;
+    border: 10px solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+}
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+#second{
+    flex-grow: 3;   /*bchi hui jgha ka 1/3 part mtlb 75% le lega*/
+    flex-shrink: 2; /* or items ki compare m doubke speed se shrink hoga*/
+    align-self: center; /* signle element change its position to centre. khud ko centre ps le ayga*/
+}
+#fourth{
+    flex-grow: 1;   /*bchi hui jgha ka 25% le lega*/
+    flex-shrink: 2;
+    align-self: flex-end;   /* khud ko flex end pr le jyga*/
+}

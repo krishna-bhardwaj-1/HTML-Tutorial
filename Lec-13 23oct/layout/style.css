@@ -1,0 +1,60 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+    height: 90vh;
+    /*abhi tk hme every div k grid row column set krne pd rhe the isse bchne k liye kyoki ye bkr approach h agr div jada hue to iske liye property h grid-template-areas*/
+    grid-template-areas: "header header header"
+                         "nav1 main nav3"
+                         "nav2 main nav3"
+                         "footer footer footer";   
+}
+
+#header{
+    background-color: rgb(217, 82, 77);
+    grid-area: header;
+    /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4; */
+}
+#nav1{
+    background-color: blueviolet;
+    grid-area: nav1;
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+}
+#nav2{
+    background-color: rgb(205, 154, 117);
+    grid-area: nav2;
+    /* grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+}
+#main{
+    background-color: rgb(227, 133, 133);
+    grid-area: main;
+    /* grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3; */
+}
+#nav3{
+    background-color: rgb(68, 187, 124);
+    grid-area: nav3;
+    /* grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4; */
+}
+#footer{
+    background-color: lightpink;
+    grid-area: footer;
+    /* grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4; */
+}

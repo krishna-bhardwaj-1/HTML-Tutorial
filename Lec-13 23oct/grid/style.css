@@ -1,0 +1,45 @@
+/*
+Grid :- it is 2 dimensional . it is also a parent proerty.
+*/
+
+
+#container{
+    /* height: 90vh; */
+    display: grid;
+    /* all div are separted in 2 columns first column size is 200px and second column size is 300px*/
+    grid-template-columns: 200px 300px; /* fraction wise bhi de skte h 1fr 3fr*/
+    grid-template-rows: 100px 150px 100px;
+    /* jin elements ko hard code krke set nhi kia vo element non gattered element considered kiye jaynenge. or column wise set ho jayenge nhi to by default row wise. dono column k niche add hoenge*/
+    grid-auto-flow: column;
+
+    /* agr non gattered element row wise h to unki height adjust krne k liye grid auto row . ye prop column wise elements pr kaam nhi kregi agr vo element non gatterd h*/
+    grid-auto-rows: 50px;
+
+    /* flow column krke div ki width k liye*/
+    /* grid-auto-flow: column;
+    grid-auto-columns: 50px; */
+}
+
+div{
+    background-color: rgb(64, 189, 203);
+    border: 1px solid black;
+}
+.second{
+    /*
+    block k size ko change row and column wise ki vo apna size increase krle row and column wise
+    */
+    background-color: brown;    
+    grid-row-start: 1;          /*block kis row no. se start hoga*/
+    grid-row-end: 3;            /* block kis row p end hoga*/
+    grid-column-start: 2;       /* block kis column se start hoga*/
+    grid-column-end: 3;         /*block kis column p end hoga*/
+    /*jis block ki jgha vo block ayga to vo block shift ho jyga grid-auto-flow k according by defalut row wise shift ho jyga column k niche*/
+}
+
+.fourth{
+    background-color: rgb(62, 29, 171);
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

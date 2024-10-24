@@ -1,0 +1,57 @@
+/*
+media query : are the point jisse upr alg device consider kia jata h or niche alg device. bcz sbki screen ka size diff hota h.
+
+screen k acc apni website ka size reduce and increase krne k liye
+
+@media screen and ((max/min)width:600px)
+*/
+div{
+    width: 500px;
+    border: 2px solid black;
+    margin: 20px auto;
+
+}
+h1{
+    color: rgb(228, 51, 51);
+    font-size: 50px;
+}
+/* @media screen and (max-width:900px) {
+    h1{
+        color: pink;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    h1{
+        color: rgb(71, 202, 126);
+        font-size: 100px;
+
+    }
+} */
+
+/*agr max width h to max size sbse upr or min m sbse chota sbse upr*/
+
+/*orientation k acc bhi change kr skte h potrait and landscape dono.*/
+
+/*if width size is greater than height then it is landscape orientation*/
+/*if height size is greater than width then it is potrait orientation*/
+
+/* @media screen and  (orientation:landscape){
+    h1{
+        color: darkorange;
+    }
+}
+@media screen and  (orientation:portrait){
+    h1{
+        color: rgb(51, 79, 235);
+    }
+} */
+
+/*if i want that ki dono property follow ho orientation as well as max-width/min-width*/
+
+@media screen and (orientation:portrait),(max-width:560px) {
+    h1{
+        color: orange;
+    }
+    
+}

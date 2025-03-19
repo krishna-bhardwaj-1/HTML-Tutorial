@@ -27,7 +27,7 @@ div{
 
     margin: 10px;
 
-    border: 5px solid black; /* it is also in 100 x 100 bcz box sizing is border box (that's why it is in in their margib)*/
+    border: 5px solid black; /* it is also in 100 x 100 bcz box sizing is border box (that's why it is in their margin)*/
 }
 span{
     width: 100px;

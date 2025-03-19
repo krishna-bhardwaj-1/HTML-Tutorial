@@ -2,7 +2,7 @@
 display : flex
 flex : not a child property.
 hum ye property child k parent ko denge . child property m sbko alg alg dete h. 
-lekin flex h hum parent ko de dete h to uske bche us property ko accept kr lete h.
+lekin flex m hum parent ko de dete h to uske bche us property ko accept kr lete h.
 
 flex box is the parent (football ground)
 flex child : flex box k bche (player)
@@ -44,7 +44,7 @@ section{
 div{
     height: 100px;
     width: 100px;
-    border: 1px solid black;
+    border: 2px solid black;
 
     /*child property*/
     /* display: inline-block; */
